@@ -12,11 +12,12 @@ void add_txt_record(Record records[]){
 	// TODO: Modify this function as you need
 
 	FILE *rfp = fopen("menufile1.txt", "r");
-  while(feof(rfp) == 0)  {
+  while(1)  {
   int enter_price, enter_type;
   char user_input[64] = "";
 
   fscanf(rfp, "%s %d %d", user_input, &enter_price, &enter_type);
+  if(feof(rfp)) break;
   printf("name : %s, price : %d, type : %d \n", user_input, enter_price, enter_type);
   
 	int temp = 0;
@@ -94,11 +95,12 @@ void read_txt_menu(Record records[]){
 	FILE *rfp = fopen("menufile2.txt", "r");
   int temp = 0;
 
-  while(feof(rfp) == 0)  { // Read end of file
+  while(1)  { // Read end of file
   int enter_price, enter_type;
   char user_input[64] = "";
 
   fscanf(rfp, "%s %d %d", user_input, &enter_price, &enter_type);
+  if(feof(rfp)) break;
   printf("name : %s, price : %d, type : %d \n", user_input, enter_price, enter_type);
   
   strcpy(records[temp].name, user_input);
