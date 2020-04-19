@@ -1,0 +1,14 @@
+<menu 1>
+name : rice, price : 1000, type : 1
+
+<menu 2>
+name : pizza, price : 10000, type : 3
+
+<menu 3>
+name : ramen, price : 2000, type : 1
+
+<menu 4>
+name : jajangmyeon, price : 7000, type : 2
+
+<menu 5>
+name : bibimbap, price : 8000, type : 1
