@@ -3,6 +3,8 @@
 ## Introduction
 This food court management system basically has the framework of CRUD. And this program manage food court’s food. User can create, read, update and delete food menu. In addition, the convenience of using the program was enhanced by making a set menu or by calculating the income of the day. Of course, it also includes sorting menus according to criteria or compressing the space of deleted data. 
 
+
+
 ## Key functionalities
 1. Create
 + Create a new data record from a .txt file 
@@ -15,9 +17,13 @@ This food court management system basically has the framework of CRUD. And this 
 4. Delete
 + Delete a record, multiple or all records (according to user specified conditions) 
 
+
+
 ## Additional functionalities
 + Arrange (sort) the order of data records based on user specified conditions 
 + Tells how much sales are today
+
+
 
 ## Function descriptions
 1. add_txt_record()
