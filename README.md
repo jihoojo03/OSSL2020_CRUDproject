@@ -6,15 +6,15 @@ This food court management system basically has the framework of CRUD. And this 
 
 
 ## Key functionalities
-1. Create
+##### 1. Create
 + Create a new data record from a .txt file 
 + Create a new record from the standard input (keyboard) 
-2. Read
+ ##### 2. Read
 + According to user specified conditions, print a record, multiple or all records to the standard output (monitor)
 + Export the entire data in a report format as a .txt file  
-3. Update
+##### 3. Update
 + Update a specific field of a record, multiple or all records (according to user specified conditions) 
-4. Delete
+##### 4. Delete
 + Delete a record, multiple or all records (according to user specified conditions) 
 
 
