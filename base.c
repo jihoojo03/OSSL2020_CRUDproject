@@ -112,6 +112,35 @@ void read_txt_menu(Record records[]){
   fclose(rfp);
   printf("Complete!! \n\n");
 }
+// Function: advanced_search_menu()
+// Input: find_type, find_price = these can help you find what you want
+// Output: menu what you want to find
+// - Show menu that you want to find
+void advanced_search_menu(Record records[]){
+  show_menu(records);
+  int find_type, find_price;
+  printf("(Korean - 1, Chinese - 2, Western - 3, Set - 4)\n");
+  printf("Enter a number of menu's type you want to find> ");
+  scanf("%d\n", &find_type);
+
+  printf("Enter a price you want to find> ");
+  scanf("%d\n", &find_price);
+
+  int temp = 0, count = 0;
+  while (records[temp].price != 0)
+  {
+    if (records[temp].type == find_type)
+    {
+      if(records[temp].price == find_price){
+        printf("name : %s, price : %d, type : %d \n", records[temp].name, records[temp].price, find_type);
+        count++;
+      }
+    }
+    temp++;
+  }
+  if(count == 0) printf("we can't find what you want\n");
+  else printf("%d has found\n");
+}
 
 // Function: export_menu()
 // Input: record - array of Records; this may contain empty elements in the middle
