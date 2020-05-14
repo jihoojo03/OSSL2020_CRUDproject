@@ -61,10 +61,12 @@ void input_handler(char input[], Record records[]){
 		make_setmenu(records);
   else if(!strcmp(input, "13"))
 		today_sales(records);
-	else if(!strcmp(input, "99"))
-		printf("Terminating... bye!\n"); // Quit - no operation (an empty statement with a semi-colon)
-	else
-		printf("Unknown menu: %s \n\n", input);
+  else if (!strcmp(input, "14"))
+	  	advanced_search_menu(records);
+  else if (!strcmp(input, "99"))
+	  printf("Terminating... bye!\n"); // Quit - no operation (an empty statement with a semi-colon)
+  else
+	  printf("Unknown menu: %s \n\n", input);
 }
 
 
@@ -84,6 +86,7 @@ void display_menu(){
 	printf(" 2. Add a new food from keyboard\n");
 	printf(" 3. Print food's records\n");
 	printf(" 4. Read entire data from .txt\n");
+	
   printf(" 5. Export entire data to .txt\n");
   printf(" 6. Update a food price\n");
   printf(" 7. Update all food price\n");
@@ -93,5 +96,6 @@ void display_menu(){
   printf(" 11. Sort menu (name/price/type)\n");
   printf(" 12. Make set-menu\n");
   printf(" 13. Today's sales\n");
-	printf(" 99. Quit\n");
+  printf(" 14. Find menu what you want\n");
+  printf(" 99. Quit\n");
 }
