@@ -8,5 +8,6 @@ void defrag_menu(Record[]);
 void sort_menu(Record[]);
 void make_setmenu(Record[]);
 void today_sales(Record[]);
+void delete_all_but(Record[]);
 
 #endif
